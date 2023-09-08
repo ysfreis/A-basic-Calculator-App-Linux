@@ -38,3 +38,4 @@ fn main() {
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
+//iletişim:discord:ysk.dev
