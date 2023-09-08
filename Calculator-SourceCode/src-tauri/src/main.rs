@@ -1,6 +1,9 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+//A basic Calculator
 
+//Powerden By ysk.dev
+//https://www.apache.org/licenses/LICENSE-2.0
 
 #[tauri::command]
 fn hesapla(a: &str,b: &str,c: &str) -> String {
