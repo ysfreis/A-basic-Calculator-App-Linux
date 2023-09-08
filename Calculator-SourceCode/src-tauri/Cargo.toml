@@ -1,8 +1,8 @@
 [package]
 name = "hesap-makinesi"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+version = "0.0.1"
+description = "A Basic Calculator"
+authors = ["Yskdev"]
 license = ""
 repository = ""
 edition = "2021"
