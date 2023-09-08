@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="contanier">
+        <h1>ÇOK BASİT HESAP MAKİNESİ</h1>
+        <p>Encoder: ysk.dev</p>
+        <p>discord: ysk.dev</p>
+      </div>
+    </div>
+  
+      
+
+      <form class="row" id="m">
+        <input type="number" id="fs" placeholder="İlk sayıyı giriniz">
+        <select id="o">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">*</option>
+        </select>
+        <input type="number" id="ls" placeholder="İkinci sayıyı giriniz">
+        <button type="submit"> Gönder</button>
+      </form>
+      <p id="sonuc">İşleminizin Sonucu:</p>
+    </div>
+  </body>
+</html>
