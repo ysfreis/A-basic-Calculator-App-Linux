@@ -54,8 +54,8 @@ jobs:
           sudo apt install libwebkit2gtk-4.0-dev:arm64 -y
           sudo apt install libssl-dev:arm64 -y
           export PKG_CONFIG_SYSROOT_DIR=/usr/aarch64-linux-gnu/
-          yarn
-          yarn rls --target aarch64-unknown-linux-gnu
+          pnpm
+          pnpm rls --target aarch64-unknown-linux-gnu
     - name: Upload deb bundle
       uses: actions/upload-artifact@v4
       with:
@@ -79,7 +79,7 @@ jobs:
         # NOTE: enterprise developers may hard code a version
         with:
           node-version: 'lts/*'
-          cache: yarn
+          cache: pnpm
           # node-version-file: '.nvmrc'
 
       - name: Setup Rust
@@ -99,12 +99,12 @@ jobs:
 
       - name: Install frontend
         run: |
-          yarn --frozen-lockfile
+          pnpm --frozen-lockfile
 
       - name: CI Build
         if: ${{ github.ref_type == 'branch' }}
         run: |
-          yarn rls
+          pnpm rls
 
       - name: CI Upload Windows
         if: ${{ github.ref_type == 'branch' && matrix.platform == 'windows-latest' }}
